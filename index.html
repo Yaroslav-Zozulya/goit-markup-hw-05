@@ -76,7 +76,11 @@
                     <h1 class="order-service-title">
                         Эффективные решения для вашего бизнеса
                     </h1>
-                    <button type="button" class="order-service-button">
+                    <button
+                        type="button"
+                        data-modal-open
+                        class="order-service-button"
+                    >
                         Заказать услугу
                     </button>
                 </div>
@@ -155,18 +159,33 @@
                                 src="./img/our-specialization-1.jpg"
                                 alt="Разработка сайтов"
                             />
+                            <div class="about-us-text-wrap">
+                                <p class="about-us-text">
+                                    Десктопные приложения
+                                </p>
+                            </div>
                         </li>
                         <li class="about-us-item">
                             <img
                                 src="./img/our-specialization-2.jpg"
                                 alt="Разработка мобильных приложений"
                             />
+                            <div class="about-us-text-wrap">
+                                <p class="about-us-text">
+                                    Мобильные приложения
+                                </p>
+                            </div>
                         </li>
                         <li class="about-us-item">
                             <img
                                 src="./img/our-specialization-3.jpg"
                                 alt="Разработка уникальных дизайнов"
                             />
+                            <div class="about-us-text-wrap">
+                                <p class="about-us-text">
+                                    Дизайнерские решения
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -773,5 +792,15 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" data-modal-close class="modal-btn">
+                    <svg class="modal-close">
+                        <use href="./img/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
